@@ -12,17 +12,18 @@
     <link rel="icon" type="image/png" sizes="16x16"  href={% static "img/fav/favicon-16x16.png" %}>
     <meta name="msapplication-TileColor" content="#000">
     <meta name="theme-color" content="#ffffff">
-    {% block title %}
-    {% endblock %}    
+   {% block title %}{% endblock %}
   </head>
   <body>       
     <header>
       {% include 'includes/header.html' %}
     </header>
     <main>
+      <div class="container">
       {% block content %}
         Контент не подвезли :(
       {% endblock %}
+    </div>
     </main>
     <footer>
       {% include 'includes/footer.html' %} 
